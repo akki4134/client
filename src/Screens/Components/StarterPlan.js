@@ -14,8 +14,8 @@ import ListItemDecorator from "@mui/joy/ListItemDecorator";
 
 export default function StarterPlan() {
   return (
-    <Grid container alignItems="center" justifyContent="center" padding={5}>
-      <Grid xs={12} md={4}>
+    <Grid container alignItems="center" justifyContent="center">
+      <Grid xs={12} md={6}>
         <Typography level="h2">Grap Our Starter Plan Now</Typography>
         <List size="sm" sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}>
           <ListItem>
@@ -34,18 +34,6 @@ export default function StarterPlan() {
             <ListItemDecorator>
               <Check />
             </ListItemDecorator>
-            Free Email
-          </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
-            </ListItemDecorator>
-            Daily Backups
-          </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
-            </ListItemDecorator>
             Unlimited Free SSL
           </ListItem>
           <ListItem>
@@ -56,14 +44,14 @@ export default function StarterPlan() {
           </ListItem>
         </List>
       </Grid>
-      <Grid xs={12} md={7}>
+      <Grid xs={12} md={6}>
         <Card
           variant="solid"
           color="primary"
-          size="md"
+          size="lg"
           invertedColors
           sx={{
-            m: 5,
+            mt: 10,
             boxShadow: "lg",
             maxWidth: "100%",
             // to make the demo resizeable

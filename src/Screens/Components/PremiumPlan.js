@@ -14,60 +14,9 @@ import ListItemDecorator from "@mui/joy/ListItemDecorator";
 
 export default function PremiumPlan() {
   return (
-    <Grid container alignItems="center" justifyContent="center" padding={5}>
-      <Grid xs={12} md={7}>
-        <Card
-          variant="solid"
-          color="primary"
-          size="md"
-          invertedColors
-          sx={{
-            m: 5,
-            boxShadow: "lg",
-            maxWidth: "100%",
-            // to make the demo resizeable
-            overflow: "auto",
-          }}
-        >
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <Chip size="sm" variant="soft">
-              Sketch 5+
-            </Chip>
-            <Chip size="sm" variant="soft">
-              Figma
-            </Chip>
-          </Box>
-          <div>
-            <Typography level="h2">
-              C$19.99
-              <Typography fontSize="sm" textColor="text.tertiary">
-                /month
-              </Typography>
-            </Typography>
-          </div>
-          <CardContent>
-            <Typography level="title-lg">Individual License</Typography>
-            <Typography level="body-md">
-              This license allows you to use the Symbol System Design with
-              unlimited amount of personal and commercial projects.
-            </Typography>
-            <Typography level="body-md">
-              This license allows you to use the Symbol System Design with
-              unlimited amount of personal and commercial projects.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button variant="solid">Purchase Now</Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid xs={12} md={4}>
-        <Typography level="h1">
-          You Need to Create a Creative Website
-        </Typography>
-        <Typography level="h3">
-          You Need to Create a Creative Website
-        </Typography>
+    <Grid container alignItems="center" justifyContent="center">
+      <Grid  alignItems="center" justifyContent="center" xs={12} md={6}>
+        <Typography level="h2">Grap Our Most Premium Plan Now</Typography>
         <List size="sm" sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}>
           <ListItem>
             <ListItemDecorator>
@@ -93,7 +42,55 @@ export default function PremiumPlan() {
             </ListItemDecorator>
             Daily Backups
           </ListItem>
+          <ListItem>
+            <ListItemDecorator>
+              <Check />
+            </ListItemDecorator>
+            Unlimited Free SSL
+          </ListItem>
         </List>
+      </Grid>
+      <Grid xs={12} md={6}>
+        <Card
+          variant="solid"
+          color="primary"
+          size="lg"
+          invertedColors
+          sx={{
+            mt: 10,
+            boxShadow: "lg",
+            maxWidth: "100%",
+            // to make the demo resizeable
+            overflow: "auto",
+          }}
+        >
+          <Box sx={{ display: "flex", gap: 1 }}>
+            <Chip size="sm" variant="soft">
+              Sketch 5+
+            </Chip>
+            <Chip size="sm" variant="soft">
+              Figma
+            </Chip>
+          </Box>
+          <div>
+            <Typography level="h2">
+              C$49.99
+              <Typography fontSize="sm" textColor="text.tertiary">
+                /month
+              </Typography>
+            </Typography>
+          </div>
+          <CardContent>
+            <Typography level="title-lg">Individual License</Typography>
+            <Typography level="body-md">
+              This license allows you to use the Symbol System Design with
+              unlimited amount of personal and commercial projects.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button variant="solid">Purchase Now</Button>
+          </CardActions>
+        </Card>
       </Grid>
     </Grid>
   );
