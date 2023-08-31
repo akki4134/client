@@ -6,6 +6,7 @@ import PricingCards from "./Components/PricingCards";
 import StarterPlan from "./Components/StarterPlan";
 import PremiumPlan from "./Components/PremiumPlan";
 
+
 // const Item = styled(Sheet)(({ theme }) => ({
 //   backgroundColor:
 //     theme.palette.mode === "dark" ? theme.palette.background.level1 : "#fff",
@@ -59,6 +60,7 @@ export default function Index() {
           <PricingCards />
         </Grid>
         <PremiumPlan />
+        <a href={`/contact`}>Contact Us</a>
       </Grid>
     </div>
   );
