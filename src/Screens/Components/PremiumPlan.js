@@ -14,9 +14,9 @@ import ListItemDecorator from "@mui/joy/ListItemDecorator";
 
 export default function PremiumPlan() {
   return (
-    <Grid container alignItems="center" justifyContent="center">
-      <Grid  alignItems="center" justifyContent="center" xs={12} md={6}>
-        <Typography level="h2">Grap Our Most Premium Plan Now</Typography>
+    <Grid container mt={10} alignItems="center" justifyContent="center">
+      <Grid xs={12} md={6}>
+        <Typography level="h2">Grap Our Premium Plan Now</Typography>
         <List size="sm" sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}>
           <ListItem>
             <ListItemDecorator>
@@ -34,63 +34,63 @@ export default function PremiumPlan() {
             <ListItemDecorator>
               <Check />
             </ListItemDecorator>
-            Free Email
-          </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
-            </ListItemDecorator>
-            Daily Backups
-          </ListItem>
-          <ListItem>
-            <ListItemDecorator>
-              <Check />
-            </ListItemDecorator>
             Unlimited Free SSL
+          </ListItem>
+          <ListItem>
+            <ListItemDecorator>
+              <Check />
+            </ListItemDecorator>
+            Unlimited Bandwidth
           </ListItem>
         </List>
       </Grid>
       <Grid xs={12} md={6}>
-        <Card
-          variant="solid"
-          color="primary"
-          size="lg"
-          invertedColors
+        <Box
           sx={{
-            mt: 10,
-            boxShadow: "lg",
-            maxWidth: "100%",
-            // to make the demo resizeable
-            overflow: "auto",
+            boxShadow: 3,
           }}
         >
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <Chip size="sm" variant="soft">
-              Sketch 5+
-            </Chip>
-            <Chip size="sm" variant="soft">
-              Figma
-            </Chip>
-          </Box>
-          <div>
-            <Typography level="h2">
-              C$49.99
-              <Typography fontSize="sm" textColor="text.tertiary">
-                /month
+          <Card
+            variant="solid"
+            color="primary"
+            size="lg"
+            invertedColors
+            sx={{
+              mt: 10,
+              boxShadow: "lg",
+              maxWidth: "100%",
+              // to make the demo resizeable
+              overflow: "auto",
+            }}
+          >
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <Chip size="sm" variant="soft">
+                Premium Website
+              </Chip>
+              <Chip size="sm" variant="soft">
+                Premium Seo
+              </Chip>
+            </Box>
+            <div>
+              <Typography level="h2">
+                C$49.99
+                <Typography fontSize="sm" textColor="text.tertiary">
+                  /month
+                </Typography>
               </Typography>
-            </Typography>
-          </div>
-          <CardContent>
-            <Typography level="title-lg">Individual License</Typography>
-            <Typography level="body-md">
-              This license allows you to use the Symbol System Design with
-              unlimited amount of personal and commercial projects.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button variant="solid">Purchase Now</Button>
-          </CardActions>
-        </Card>
+            </div>
+            <CardContent>
+              <Typography level="title-lg">Individual License</Typography>
+              <Typography level="body-md">
+                This license allows you to use the Symbol System Design with
+                unlimited amount of personal and commercial projects.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button variant="solid">Purchase Now</Button>
+            </CardActions>
+          </Card>
+        </Box>
       </Grid>
     </Grid>
   );
